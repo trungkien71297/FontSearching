@@ -20,11 +20,12 @@ public class WSDemo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        GeoIPService ipservice =  new GeoIPService();
-        GeoIPServiceSoap geoIPServiceSoap = ipservice.getGeoIPServiceSoap();
-        GeoIP geoip = geoIPServiceSoap.getGeoIP("123.30.215.62");
-        System.out.println(geoip.getCountryName());
-        System.out.println(geoip.getReturnCodeDetails());
+        GeoIPService pogba =  new GeoIPService();
+        GeoIPServiceSoap rooney = pogba.getGeoIPServiceSoap();
+        GeoIP ferguson = rooney.getGeoIP("123.30.215.62");
+        System.out.println(ferguson.getCountryName());
+        System.out.println(ferguson.getReturnCodeDetails());
+		System.out.println("Edited v2.0");
     }
     
 }
